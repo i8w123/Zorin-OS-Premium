@@ -48,7 +48,7 @@ echo "(add -X for a lot of extra content, Recommended)"
 echo "(add -U for unattended mode, Not recommended)"
 echo ""
 echo "THIS CODE AND THE ACCOMPANYING DOCUMENTATION WERE SIGNIFICANTLY OVERHAULED BY NamelessNanashi/NanashiTheNameless."
-echo "https://github.com/NanashiTheNameless/Zorin-OS-Pro IS THE OFFICIAL SOURCE FOR THIS TOOL."
+echo "https://github.com/i8w123/Zorin-OS-Premium IS THE OFFICIAL SOURCE FOR THIS TOOL."
 echo "IF YOU GOT THIS CODE ELSEWHERE KNOW THAT THE CODE SHOULD NOT BE FULLY TRUSTED."
 echo ""
 
@@ -56,7 +56,7 @@ sleep 8
 
 function fail() {
 	echo ""
-	echo "You are not running this script correctly, read the GitHub https://github.com/NanashiTheNameless/Zorin-OS-Pro/ for more info"
+	echo "You are not running this script correctly, read the GitHub https://github.com/i8w123/Zorin-OS-Premium/ for more info"
 	echo ""
 	exit 1
 }
@@ -250,7 +250,7 @@ function apt_update_with_retry() {
 }
 
 # Manually add the public gpg keys
-if ! curl -L -H 'DNT: 1' -H 'Sec-GPC: 1' https://github.com/NanashiTheNameless/Zorin-OS-Pro/raw/refs/heads/main/raw/zorin-os.gpg --output "$TEMPD/zorin-os.gpg"; then
+if ! curl -L -H 'DNT: 1' -H 'Sec-GPC: 1' https://github.com/i8w123/Zorin-OS-Premium/raw/refs/heads/main/raw/zorin-os.gpg --output "$TEMPD/zorin-os.gpg"; then
 	echo "Error: Failed to download Zorin OS public gpg key."
 	exit 1
 fi
@@ -260,7 +260,7 @@ if [ ! -s "$TEMPD/zorin-os.gpg" ]; then
 fi
 
 if [ "$version" = "18" ]; then
-	if ! curl -L -H 'DNT: 1' -H 'Sec-GPC: 1' https://github.com/NanashiTheNameless/Zorin-OS-Pro/raw/refs/heads/main/raw/zorin-os-premium-18.gpg --output "$TEMPD/zorin-os-premium-18.gpg"; then
+	if ! curl -L -H 'DNT: 1' -H 'Sec-GPC: 1' https://github.com/i8w123/Zorin-OS-Premium/raw/refs/heads/main/raw/zorin-os-premium-18.gpg --output "$TEMPD/zorin-os-premium-18.gpg"; then
 		echo "Error: Failed to download premium public gpg key."
 		exit 1
 	fi
@@ -270,7 +270,7 @@ if [ "$version" = "18" ]; then
 	fi
 
 else
-	if ! curl -L -H 'DNT: 1' -H 'Sec-GPC: 1' https://github.com/NanashiTheNameless/Zorin-OS-Pro/raw/refs/heads/main/raw/zorin-os-premium.gpg --output "$TEMPD/zorin-os-premium.gpg"; then
+	if ! curl -L -H 'DNT: 1' -H 'Sec-GPC: 1' https://github.com/i8w123/Zorin-OS-Premium/raw/refs/heads/main/raw/zorin-os-premium.gpg --output "$TEMPD/zorin-os-premium.gpg"; then
 		echo "Error: Failed to download premium public gpg key."
 		exit 1
 	fi
@@ -358,11 +358,11 @@ if dpkg -s "zorin-os-premium-keyring" >/dev/null 2>&1; then
 	echo ""
 else
 	if [ "$version" = "18" ]; then
-		if ! bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/NanashiTheNameless/Zorin-OS-Pro/raw/refs/heads/main/make_dummy_deb.sh) -w "$TEMPD/Dummy/" -n zorin-os-premium-keyring -v 1.1 -o "$TEMPD/zorin-os-premium-keyring.deb"; then
+		if ! bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/i8w123/Zorin-OS-Premium/raw/refs/heads/main/make_dummy_deb.sh) -w "$TEMPD/Dummy/" -n zorin-os-premium-keyring -v 1.1 -o "$TEMPD/zorin-os-premium-keyring.deb"; then
 			echo "Warning: Failed to create dummy deb for zorin-os-premium-keyring (1.1). Continuing anyway..."
 		fi
 	else
-		if ! bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/NanashiTheNameless/Zorin-OS-Pro/raw/refs/heads/main/make_dummy_deb.sh) -w "$TEMPD/Dummy/" -n zorin-os-premium-keyring -v 1.0 -o "$TEMPD/zorin-os-premium-keyring.deb"; then
+		if ! bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/i8w123/Zorin-OS-Premium/raw/refs/heads/main/make_dummy_deb.sh) -w "$TEMPD/Dummy/" -n zorin-os-premium-keyring -v 1.0 -o "$TEMPD/zorin-os-premium-keyring.deb"; then
 			echo "Warning: Failed to create dummy deb for zorin-os-premium-keyring (1.0). Continuing anyway..."
 		fi
 	fi
@@ -373,7 +373,7 @@ if dpkg -s "zorin-os-keyring" >/dev/null 2>&1; then
 	echo "zorin-os-keyring is already installed, skipping dummy deb creation/installation."
 	echo ""
 else
-	if ! bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/NanashiTheNameless/Zorin-OS-Pro/raw/refs/heads/main/make_dummy_deb.sh) -w "$TEMPD/Dummy/" -n zorin-os-keyring -v 1.1 -o "$TEMPD/zorin-os-keyring.deb"; then
+	if ! bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/i8w123/Zorin-OS-Premium/raw/refs/heads/main/make_dummy_deb.sh) -w "$TEMPD/Dummy/" -n zorin-os-keyring -v 1.1 -o "$TEMPD/zorin-os-keyring.deb"; then
 		echo "Warning: Failed to create dummy deb for zorin-os-keyring. Continuing anyway..."
 	fi
 fi
@@ -503,9 +503,9 @@ fi
 echo ""
 echo ""
 echo "All done!"
-echo "If you have any questions or comments please see https://github.com/NanashiTheNameless/Zorin-OS-Pro/discussions/29 for more information on how to deal with them."
+echo "If you have any questions or comments please see https://github.com/i8w123/Zorin-OS-Premium/discussions/29 for more information on how to deal with them."
 echo ""
-echo "If you are using this tool and have issues please file a bug report about said issues on GitHub https://github.com/NanashiTheNameless/Zorin-OS-Pro/issues/new?template=bug_report.yml"
+echo "If you are using this tool and have issues please file a bug report about said issues on GitHub https://github.com/i8w123/Zorin-OS-Premium/issues/new?template=bug_report.yml"
 echo ""
 echo 'Please Reboot your Zorin Instance... You can do so with "sudo reboot" or by pressing "reboot" in the Zorin menu in the bottom left.'
 echo ""

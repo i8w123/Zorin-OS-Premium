@@ -1,5 +1,5 @@
 # Zorin-OS-Pro Archive
-This is a re-upload of NanashiTheNameless's [Zorin OS Pro](http://github.com/NanashiTheNameless/Zorin-OS-Pro) script, put together using data from the Wayback Machine. Not all files have been preserved, but all the important ones have.
+This is a re-upload of NanashiTheNameless's [Zorin OS Pro](http://github.com/i8w123/Zorin-OS-Premium) script, put together using data from the Wayback Machine. Not all files have been preserved, but all the important ones have.
 
 ## Unpreserved Files
 - `downgrade.sh`
@@ -9,7 +9,7 @@ This is a re-upload of NanashiTheNameless's [Zorin OS Pro](http://github.com/Nan
 
 The original README is below. Keep in mind that the exact instructions are probably different.
 
-# Zorin-OS-Pro [![Shellcheck](https://img.shields.io/github/actions/workflow/status/NanashiTheNameless/Zorin-OS-Pro/shellcheck.yml?branch=main&label=Shellcheck&style=for-the-badge&labelColor=0d1117)](https://github.com/NanashiTheNameless/Zorin-OS-Pro/actions/workflows/shellcheck.yml)
+# Zorin-OS-Pro [![Shellcheck](https://img.shields.io/github/actions/workflow/status/i8w123/Zorin-OS-Premium/shellcheck.yml?branch=main&label=Shellcheck&style=for-the-badge&labelColor=0d1117)](https://github.com/i8w123/Zorin-OS-Premium/actions/workflows/shellcheck.yml)
 
 ## This script turns your Zorin OS CORE instance into a Zorin OS PRO instance
 
@@ -29,7 +29,7 @@ See [raw/NOTICE.txt](</raw/NOTICE.txt>) for more info.
 
 ## Stargazers over time
 
-[![Stargazers over time](<https://starchart.cc/NanashiTheNameless/Zorin-OS-Pro.svg?variant=adaptive>)](<https://starchart.cc/NanashiTheNameless/Zorin-OS-Pro>)
+[![Stargazers over time](<https://starchart.cc/i8w123/Zorin-OS-Premium.svg?variant=adaptive>)](<https://starchart.cc/i8w123/Zorin-OS-Premium>)
 
 ## Usage
 
@@ -40,13 +40,13 @@ Copy the command below, paste in your terminal, enter your password when prompte
 ## For The Minimum Additional Content
 
 ```sh
-bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/NanashiTheNameless/Zorin-OS-Pro/raw/refs/heads/main/zorin.sh) -U
+bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/i8w123/Zorin-OS-Premium/raw/refs/heads/main/zorin.sh) -U
 ```
 
 ## For A Lot of Extra Content (Recommended)
 
 ```sh
-bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/NanashiTheNameless/Zorin-OS-Pro/raw/refs/heads/main/zorin.sh) -U -X
+bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/i8w123/Zorin-OS-Premium/raw/refs/heads/main/zorin.sh) -U -X
 ```
 
 ## Examples
@@ -61,6 +61,6 @@ bash <(curl -H 'DNT: 1' -H 'Sec-GPC: 1' -fsSL https://github.com/NanashiTheNamel
 
 ## Credits
 
-[All Major Contributors](<https://github.com/NanashiTheNameless/Zorin-OS-Pro/blob/main/CONTRIBUTORS.md>)
+[All Major Contributors](<https://github.com/i8w123/Zorin-OS-Premium/blob/main/CONTRIBUTORS.md>)
 
-[All Other Contributors](<https://github.com/NanashiTheNameless/Zorin-OS-Pro/graphs/contributors>)
+[All Other Contributors](<https://github.com/i8w123/Zorin-OS-Premium/graphs/contributors>)
